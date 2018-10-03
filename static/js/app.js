@@ -2,6 +2,9 @@ function buildMetadata(sample) {
 
   d3.select("#sample-metadata").html(""); //clears html
 
+ var mm= d3.select("#selDataset");
+ console.log(mm);
+
   var elt = document.getElementById("selDataset"); // selects element
   var eltText = elt.options[elt.selectedIndex].text; // gets text of selected element
 
